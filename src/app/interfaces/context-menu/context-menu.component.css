@@ -1,0 +1,57 @@
+:host {
+    position: absolute;
+    z-index: 99999999;
+    border: 3px solid;
+    color: #c6b895;
+    font-family: "RuneScape", serif;
+    font-size: 16px;
+    background: #0a1d26;
+    border-image: url(../../../assets/img/interface/context_borders.png) 3 3 3 fill / 1 / 0 stretch;
+    text-shadow: 1px 1px 0 #000;
+}
+
+:host.hidden {
+    visibility: hidden;
+}
+
+:host /deep/ h1 {
+    background: linear-gradient(to bottom, #1c1a12 0%, #0b0c05 100%);
+    border-bottom: 1px solid #000;
+    white-space: nowrap;
+    font-size: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+:host /deep/ ul {
+    list-style: none;
+}
+
+:host /deep/ ul li {
+    cursor: pointer;
+    padding-left: 2px;
+}
+
+:host /deep/ ul li ul {
+    display: table;
+    width: 100%;
+}
+
+:host /deep/ ul li ul li:hover {
+    background: #3ea2c0;
+}
+
+:host /deep/ ul li ul li {
+    display: table-cell;
+    min-width: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+:host /deep/ ul li ul li:first-child {
+    text-align: left;
+}
+
+:host /deep/ ul li:hover {
+    background: #285970;
+}

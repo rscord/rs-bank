@@ -1,0 +1,5 @@
+<fancy-frame #frame [ngStyle]="style" [heading]="dialogRef.context.heading" mwlResizable ngDraggable (resizeEnd)="onResizeEnd($event)"
+  (close)="onClose()" [enableGhostResize]="true" [resizeCursorPrecision]="5" [handle]="frame.head.nativeElement"
+  [resizeEdges]="{bottom: true, right: true, left: true}" tabindex="0">
+  <ng-content></ng-content>
+</fancy-frame>

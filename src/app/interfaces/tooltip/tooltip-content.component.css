@@ -1,0 +1,13 @@
+:host {
+    border: 4px solid;
+    color: #c6b895;
+    background: #000;
+    border-image: url(../../../assets/img/interface/bank/borders.png) 4 4 4 fill / 1 / 0 repeat;
+    padding: 5px;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+:host /deep/ h1 {
+    font-size: 12px;
+}

@@ -1,0 +1,6 @@
+<ng-container *ngIf="stages">
+  <div *ngFor="let stage of stages" class="progress">{{ stage[0] }} {{ stage[1] }}%</div>
+</ng-container>
+<div class="game-window" *ngIf="!stages">
+  <bank-container></bank-container>
+</div>

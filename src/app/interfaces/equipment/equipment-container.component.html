@@ -1,0 +1,16 @@
+<ng-container *ngFor="let slotName of equipmentSlots; let index = index;">
+  <div [class]="'slot ' + slotName" [class.has-item]="items[index]" [class.hover]="index === hoverIndex" (click)="onClick($event, index)"
+    (drop)="onDrop($event, index)" ondragover="event.preventDefault();" (dragenter)="onDragEnter($event, index)"
+    (dragend)="onDragEnd($event, index)" (dragleave)="onDragLeave($event, index)" (mouseenter)="onMouseEnter($event, index)"
+    (mouseleave)="onMouseLeave($event, index)">
+    <ng-container *ngIf="items[index]">
+      <span [class]="getClass(index)">{{formatAmount(index)}}</span>
+      <img [class.noted]="items[index].isNoted" (dragstart)="onDragStart($event, index)" draggable="true" [src]="items[index].icon" />
+    </ng-container>
+  </div>
+</ng-container>
+<div class="column horizontal" style="width: 48px;top: 50px;left: 65px;"></div>
+<div class="column horizontal" style="width: 100px;top: 86px;left: 30px;"></div>
+<div class="column vertical" style="height: 125px;left: 85px;top: 30px;"></div>
+<div class="column vertical" style="height: 80px;top: 80px;left: 32px;"></div>
+<div class="column vertical" style="height: 80px;top: 80px;left: 138px;"></div>

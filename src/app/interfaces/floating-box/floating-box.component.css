@@ -1,0 +1,9 @@
+:host {
+    position: absolute;
+    z-index: 99999999;
+    display: block;
+}
+
+:host.hidden {
+    display: none;
+}

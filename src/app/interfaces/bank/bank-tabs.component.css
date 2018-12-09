@@ -1,0 +1,150 @@
+:host {
+    display: flex;
+}
+
+.tabs {
+    flex: 1;
+    height: 64px;
+    overflow: hidden;
+}
+
+.tabs .list {
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 3px;
+}
+
+.tabs.small .list {
+    padding: 0;
+}
+
+.tabs.small {
+    height: 30px;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.pages .square.active {
+    background: #fbcc00;
+}
+
+.pages .square:hover {
+    cursor: pointer;
+    background: #fbcc00;
+}
+
+.pages .square {
+    background: #525b62;
+    width: 4px;
+    height: 4px;
+    margin-right: 20px;
+}
+
+.controls {
+    margin-right: 10px;
+}
+
+.control {
+    background: url(../../../assets/img/interface/arrow_large.png);
+    height: 21px;
+    width: 14px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.control:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.control.disabled {
+    filter: grayscale(100%);
+}
+
+.control.fast {
+    background: url(../../../assets/img/interface/double_arrow.png);
+    height: 17px;
+    width: 14px;
+    margin-bottom: 12px;
+}
+
+.controls.right {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.controls.right .control {
+    transform: scaleX(-1);
+}
+
+.tab {
+    background: url(../../../assets/img/interface/bank/tab_bg.png);
+    width: 57px;
+    height: 47px;
+    position: relative;
+    display: inline-block;
+    margin-left: -5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tab:first-child {
+    margin: 0;
+}
+
+.tab.active {
+    background: url(../../../assets/img/interface/bank/tab_bg_active.png);
+    z-index: 101 !important;
+}
+
+.tab:hover {
+    background: url(../../../assets/img/interface/bank/tab_bg_active.png);
+}
+
+.tab .bookmark {
+    height: 42px;
+    width: 5px;
+    background: #764646;
+    border-radius: 0 0 5px 5px;
+    margin-top: -1px;
+    margin-left: 3px;
+    position: absolute;
+}
+
+.tab img {
+    position: absolute;
+    margin: 0 auto;
+    top: 5px;
+    left: 0;
+    right: 5px;
+    bottom: 0;
+}
+
+.tab span {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    color: #70878d;
+    font-size: 11px;
+    z-index: 2;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.tab.active span {
+    color: #A5C1CC;
+}
+
+.tabs.small {
+    padding-left: 5px;
+}
+
+.tabs.small .tab {
+    width: 40px;
+    height: 30px;
+    margin-left: 2px;
+    background-size: cover;
+}

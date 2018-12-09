@@ -1,0 +1,18 @@
+:host {
+    position: absolute;
+    top: 0;
+    z-index: 99999999;
+    display: block;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+fancy-frame {
+    display: flex;
+    flex-flow: column;
+}
+
+fancy-frame /deep/ .head {
+    cursor: move;
+}

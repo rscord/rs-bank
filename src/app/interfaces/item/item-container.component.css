@@ -1,0 +1,84 @@
+:host {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.slot:hover,
+.slot.hover {
+    outline: 1px solid white;
+    cursor: pointer;
+}
+
+.amount {
+    position: absolute;
+    color: yellow;
+    font-size: 11px;
+    text-shadow: 1px 1px 0 #000;
+    z-index: 1;
+}
+
+.slot.placeholder img {
+    filter: grayscale(100%);
+}
+
+.slot {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    position: relative;
+    background: url(../../../assets/img/interface/slot_bg.png) no-repeat;
+    /* alternative background, but much slower */
+    /*
+   border-image: linear-gradient(45deg, #1e3138 0%, #112530 100%) 1;
+   box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);*/
+    flex: 1 0 38px;
+    max-width: 42px;
+    user-select: none;
+    text-align: center;
+}
+
+.slot.locked {
+    outline: 1px solid yellow;
+}
+
+.slot img {
+    margin-top: 3px;
+}
+
+.slot img.noted {
+    padding: 5px;
+    height: 32px;
+    width: 32px;
+    background: url(../../../assets/img/note.gif);
+}
+
+.spacer {
+    width: 38px;
+    margin-right: 5px;
+    flex: 1 1 auto;
+    max-width: 50px;
+    visibility: hidden;
+}
+
+.amount-1 {
+    visibility: hidden;
+}
+
+.amount-0 {
+    color: red;
+}
+
+.amount-k {
+    color: white;
+}
+
+.amount-m {
+    color: #00f800;
+}
+
+.amount-limit {
+    color: #ff8400;
+}

@@ -1,0 +1,20 @@
+:host {
+    text-align: center;
+}
+
+.gizmo {
+    display: inline-block;
+}
+
+.gizmo {
+    margin-right: 15px;
+}
+
+.gizmo:last-child {
+    margin: 0;
+}
+
+item-perk {
+    width: 32px;
+    float: left;
+}

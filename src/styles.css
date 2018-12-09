@@ -1,0 +1,278 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #3b392d;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  font-size: 12px;
+  color: #6b7f88;
+}
+
+@font-face {
+  font-family: "RuneScape";
+  src: url("./assets/runescape_uf.woff") format("woff"),
+  url("./assets/runescape_uf.ttf") format('truetype');
+  font-weight: bold;
+}
+
+.game-window {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.game-window .mCSB_scrollTools .mCSB_draggerRail {
+  width: 10px;
+  border: 1px solid #14282f;
+}
+
+.game-window .mCSB_scrollTools .mCSB_buttonUp {
+  opacity: 1;
+  background: url(./assets/img/interface/scrollbar_arrow.png) center no-repeat;
+  height: 10px;
+}
+
+.game-window .mCSB_scrollTools .mCSB_buttonDown {
+  opacity: 1;
+  background: url(./assets/img/interface/scrollbar_arrow.png) center no-repeat;
+  transform: scaleY(-1);
+  height: 10px;
+}
+
+.game-window .mCSB_scrollTools a + .mCSB_draggerContainer {
+  margin: 10px 0;
+}
+
+.game-window .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+  -moz-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.game-window .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  -moz-transition: none;
+  -webkit-transition: none;
+  transition: none;
+  background: linear-gradient(to right, #ffd457 0%, #e0af14 50%, #d2892d 50%, #c17515 99%);
+}
+
+.mCSB_container {
+  margin-right: 20px;
+}
+
+.mCustomScrollBox {
+  width: 100%;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  position: relative;
+  width: 4px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+  bottom: 0;
+}
+
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown {
+
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+
+}
+
+.mCustomScrollBox {
+
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: none;
+  direction: ltr;
+
+}
+
+.mCSB_scrollTools {
+  position: absolute;
+  width: 10px;
+  height: auto;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: "alpha(opacity=40)";
+  -ms-filter: "alpha(opacity=40)";
+
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+
+}
+
+.divider {
+  background: #20373f;
+  height: 1px;
+  box-shadow: 0 -1px 1px #000;
+}
+
+.triple-border {
+  background: #0a1e29;
+  padding: 8px;
+  position: relative;
+  border: 3px solid;
+  border-image: url(assets/img/interface/triple_border.png) 3 3 3 fill / 1 / 0 repeat;
+}
+
+table tr:nth-child(odd) {
+  background: #08151c;
+}
+
+table tr:nth-child(even) {
+  background: #091e25;
+}
+
+table td {
+  padding: 3px;
+}
+
+span.item-name {
+  color: #ff981f;
+}
+
+/* INPUT */
+input {
+  background: #0f202a;
+  border-radius: 2px;
+  border: 1px solid #4b5c64;
+  color: #aecedd;
+  font-size: 12px;
+  padding: 1px 5px;
+  box-shadow: inset 0 0 5px #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* DROPDOWN */
+.ng-select {
+  width: 100%;
+}
+
+.ng-select .ng-input {
+  display: none;
+}
+
+ng-select.ng-select .ng-select-container {
+  background: #385e67;
+  background: -moz-linear-gradient(top, #385e67 0%, #213e4e 16%, #08222f 98%);
+  background: -webkit-linear-gradient(top, #385e67 0%, #213e4e 16%, #08222f 98%);
+  background: linear-gradient(to bottom, #385e67 0%, #213e4e 16%, #08222f 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#385e67', endColorstr='#08222f', GradientType=0);
+  border-radius: 4px;
+  border: 1px solid #54636a;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #aecedd;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 1px #000;
+}
+
+ng-select.ng-select .ng-select-container:hover {
+  filter: brightness(150%);
+}
+
+.ng-select .ng-arrow-wrapper {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ng-select .ng-arrow-wrapper {
+  padding-right: 5px;
+  height: 15px;
+}
+
+.ng-select .ng-select-container .ng-arrow-wrapper .ng-arrow {
+  background: url(assets/img/interface/dropdown_arrow.png);
+  width: 9px;
+  height: 10px;
+}
+
+ng-select.ng-select .ng-clear-zone .ng-clear {
+  font-size: 17px;
+}
+
+.ng-select .ng-placeholder, .ng-select .ng-value {
+  width: 100%;
+}
+
+.ng-has-value .ng-placeholder {
+  display: none;
+}
+
+.ng-select-container {
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.ng-dropdown-panel-items {
+  background: #08151c;
+  color: #98b7c6;
+  border: 1px solid #313f46;
+}
+
+.ng-dropdown-panel-items .ng-option {
+  padding: 2px;
+}
+
+.ng-dropdown-panel-items .ng-option:hover {
+  background: #003652;
+}

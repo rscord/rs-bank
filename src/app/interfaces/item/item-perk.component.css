@@ -1,0 +1,21 @@
+:host {
+    position: relative;
+    display: block;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.rank {
+    background: url(../../../assets/img/interface/perk_rank.png);
+    width: 5px;
+    height: 5px;
+}
+
+.rank-col {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

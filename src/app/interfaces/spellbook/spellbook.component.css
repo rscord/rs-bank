@@ -1,0 +1,62 @@
+:host {
+    display: flex;
+    flex-flow: column;
+}
+
+.spell {
+    display: inline-block;
+    width: 29px;
+    text-align: center;
+    height: 29px;
+    filter: grayscale(100%);
+    vertical-align: top;
+}
+
+.spell:hover {
+    box-shadow: inset 0 0 2px #000;
+}
+
+.spell.available {
+    filter: none;
+}
+
+.divider {
+    margin-bottom: 10px;
+}
+
+.categories img {
+    margin-right: 10px;
+}
+
+.categories img:hover {
+    box-shadow: inset 0 0 2px #000;
+}
+
+.categories img.active {
+    box-shadow: inset 0 0 5px #000;
+}
+
+img {
+    cursor: pointer;
+    max-width: 30px;
+    padding: 3px;
+    max-height: 30px;
+}
+
+/deep/ .mCSB_container {
+    margin-right: 5px;
+}
+
+.mCS_no_scrollbar /deep/ .mCSB_container {
+    margin: 0;
+}
+
+.mCS_no_scrollbar /deep/ .spell {
+    width: 32px;
+    height: 32px;
+}
+
+.spells {
+    overflow: hidden;
+    flex: 1 1 auto;
+}

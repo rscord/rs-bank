@@ -1,0 +1,115 @@
+:host {
+    width: 159px;
+    height: 181px;
+    display: block;
+    position: relative;
+}
+
+.slot {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+.slot img {
+    margin: 0;
+}
+
+.slot.has-item {
+    background-image: url(../../../assets/img/interface/equipment/slot.png) !important;
+}
+
+.column {
+    position: absolute;
+    z-index: -1;
+}
+
+.column.vertical {
+    background-image: url(../../../assets/img/interface/equipment/vertical.png);
+    width: 6px;
+}
+
+.column.horizontal {
+    background-image: url(../../../assets/img/interface/equipment/horizontal.png);
+    height: 6px;
+}
+
+.slot.cape {
+    background-image: url(../../../assets/img/interface/equipment/slot_cape.png);
+    top: 36px;
+    left: 36px;
+}
+
+.slot.head {
+    background-image: url(../../../assets/img/interface/equipment/slot_head.png);
+    left: 72px;
+}
+
+.slot.legs {
+    background-image: url(../../../assets/img/interface/equipment/slot_legs.png);
+    top: 108px;
+    left: 72px;
+}
+
+.slot.body {
+    background-image: url(../../../assets/img/interface/equipment/slot_body.png);
+    top: 72px;
+    left: 72px;
+}
+
+.slot.neck {
+    background-image: url(../../../assets/img/interface/equipment/slot_neck.png);
+    top: 36px;
+    left: 72px;
+}
+
+.slot.feet {
+    background-image: url(../../../assets/img/interface/equipment/slot_feet.png);
+    top: 144px;
+    left: 72px;
+}
+
+.slot.main {
+    background-image: url(../../../assets/img/interface/equipment/slot_main.png);
+    top: 72px;
+    left: 18px;
+}
+
+.slot.hands {
+    background-image: url(../../../assets/img/interface/equipment/slot_hands.png);
+    top: 144px;
+    left: 18px;
+}
+
+.slot.ring {
+    background-image: url(../../../assets/img/interface/equipment/slot_ring.png);
+    top: 144px;
+    left: 124px;
+}
+
+.slot.shield {
+    background-image: url(../../../assets/img/interface/equipment/slot_shield.png);
+    top: 72px;
+    left: 124px;
+}
+
+.slot.ammo {
+    background-image: url(../../../assets/img/interface/equipment/slot_ammo.png);
+    top: 36px;
+    left: 108px;
+}
+
+.slot.pocket {
+    background-image: url(../../../assets/img/interface/equipment/slot_pocket.png);
+    left: 108px;
+}
+
+.slot.sigil {
+    background-image: url(../../../assets/img/interface/equipment/slot_sigil.png);
+    top: 36px;
+}
+
+.slot.aura {
+    background-image: url(../../../assets/img/interface/equipment/slot_aura.png);
+    left: 36px;
+}

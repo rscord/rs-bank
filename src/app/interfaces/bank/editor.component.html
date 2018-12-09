@@ -1,0 +1,50 @@
+<ul>
+  <li (click)="tab = 0" [class.active]="tab === 0">Tools</li>
+  <li (click)="tab = 1" [class.active]="tab === 1">Add item</li>
+</ul>
+<div *ngIf="tab === 0" style="display: flex">
+  <div class="triple-border col1">
+    Regeneration<br><br><br>
+    Number of tabs<br>
+    <input type="number" [formControl]="numberTabsFormControl"><br>
+    Number of items<br>
+    <input type="number" [formControl]="numberItemsFormControl"><br><br><br>
+    <button class="btn" (click)="onRegenerate()">Regenerate bank</button>
+  </div>
+  <div class="triple-border col2">
+    Save/load<br>
+    <textarea [formControl]="saveFormControl"></textarea>
+    <div>{{ status }}</div>
+    <button class="btn" (click)="onSave()">Save</button>
+    <button class="btn" (click)="onLoad()">Load</button>
+  </div>
+</div>
+<div *ngIf="tab === 1" style="display: flex">
+  <div class="triple-border col1">
+    <input [formControl]="searchFormControl" placeholder="Search">
+    <div class="results">
+      <div *ngFor="let result of results" (click)="onResultClick(result)"> {{ result.name }}</div>
+    </div>
+  </div>
+  <div class="triple-border col2">
+    <ng-container *ngIf="descriptor">
+      <img [src]="icon"> {{ descriptor.name }}<br>
+      Amount<br>
+      <input type="number" [formControl]="amountFormControl"><br>
+      <input type="checkbox" [formControl]="augmentedFormControl"> Augmented
+      <ng-container *ngIf="augmentedFormControl.value">
+        Xp<br>
+        <input type="number" [formControl]="xpFormControl"><br>
+        <div *ngFor="let input of perkInputs" class="perk">
+          <ng-select bindLabel="name" [searchable]="false" [formControl]="input.perkControl" [items]="perks"
+            [placeholder]="input.placeholder">
+          </ng-select>
+          <input type="number" [formControl]="input.rankControl">
+          <item-perk *ngIf="input.perk" [perk]="input.perk"></item-perk>
+        </div>
+      </ng-container>
+      <div style="clear: both;"></div>
+      <button class="btn" (click)="onAdd()">Add</button>
+    </ng-container>
+  </div>
+</div>

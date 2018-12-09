@@ -1,0 +1,88 @@
+:host {
+    color: #fff;
+    width: 446px;
+    height: 327px;
+    display: flex;
+    flex-flow: column;
+}
+
+:host>div {
+    height: 100%;
+}
+
+.results {
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.perk ng-select {
+    width: 160px;
+    float: left;
+}
+
+.perk input {
+    width: 40px;
+    float: left;
+}
+
+item-perk {
+    width: 22px;
+    float: left;
+}
+
+.triple-border.col1 {
+    display: flex;
+    flex-flow: column;
+    height: 300px;
+}
+
+.triple-border.col1 input {
+    flex: 0 0 auto;
+}
+
+.results {
+    background: rgba(0, 0, 0, 0.4);
+    flex: 1 1 auto;
+}
+
+.col1 {
+    width: 164px;
+    margin-right: 10px;
+}
+
+.col2 {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+.results>div {
+    padding: 3px;
+}
+
+.results>div:hover {
+    background-color: #003652;
+    cursor: pointer;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+    background: #0a1e29;
+    padding: 5px;
+    border: 1px solid #2F414B;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+ul li.active {
+    z-index: 1;
+    background-color: #003652;
+}
+
+ul {
+    height: 27px;
+}

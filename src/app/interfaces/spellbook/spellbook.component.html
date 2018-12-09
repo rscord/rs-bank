@@ -1,0 +1,13 @@
+<div class="categories">
+  <img *ngFor="let category of categories" [class.active]="activeCategory === category" (click)="activeCategory = category"
+    [src]="category.icon" />
+</div>
+<div class="divider"></div>
+<div class="spells" malihu-scrollbar [scrollbarOptions]="scrollbarOptions">
+  <ng-container *ngFor="let spell of spells">
+    <div *ngIf="spell.category === activeCategory.id" class="spell" [class.available]="canCast(spell)" (mouseenter)="onMouseEnter(spell)"
+      (click)="onMouseClick(spell)" (mouseleave)="onMouseLeave(spell)">
+      <img [src]="'https://runescape.wiki/images/' + spell.icon" />
+    </div>
+  </ng-container>
+</div>

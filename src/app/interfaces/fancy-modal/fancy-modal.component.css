@@ -1,0 +1,14 @@
+:host {
+    margin: 120px auto;
+    width: 600px;
+    display: block;
+}
+
+fancy-frame {
+    display: flex;
+    flex-flow: column;
+}
+
+fancy-frame /deep/>.head {
+    cursor: move;
+}

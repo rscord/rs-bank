@@ -1,0 +1,22 @@
+<div class="controls" *ngIf="!small">
+  <div class="control fast" (click)="movePage(-1)"></div>
+  <div class="control" (click)="move(-1)"></div>
+</div>
+<div class="tabs" [class.small]="small">
+  <div class="pages" *ngIf="!small">
+    <div *ngFor="let page of pages; let i = index" [class.active]="page" class="square" (click)="jumpToPage(i)"></div>
+  </div>
+  <div #listContainer class="list">
+    <div (drop)="onDrop($event, tab)" (dragover)="onDragOver($event, tab)" (dragenter)="onDragEnter($event, tab)"
+      (mouseenter)="onMouseEnter(tab)" (mouseleave)="onMouseLeave()" class="tab" *ngFor="let tab of tabs; let i = index"
+      [class.active]="tab === activeTab || active === tab" [style.z-index]="small ? null : tabs.length-i" (click)="setActiveTab(tab)">
+      <div *ngIf="!small" class="bookmark" [style.background-color]="tab.color"></div>
+      <img *ngIf="tab.icon" [src]="tab.icon" />
+      <span *ngIf="!small">{{ i + 1 }}</span>
+    </div>
+  </div>
+</div>
+<div class="controls right" *ngIf="!small">
+  <div class="control fast" (click)="movePage(1)"></div>
+  <div class="control" (click)="move(1)"></div>
+</div>

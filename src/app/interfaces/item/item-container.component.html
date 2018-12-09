@@ -1,0 +1,11 @@
+<ng-template ngFor let-item let-index="index" [ngForOf]="items">
+  <div class="slot" [class.placeholder]="item && item.amount === 0" [class.locked]="container.isLocked(index)"
+    [class.hover]="index === hoverIndex" (click)="onClick($event, index)" (drop)="onDrop($event, index)" ondragover="event.preventDefault();"
+    (dragenter)="onDragEnter($event, index)" (dragend)="onDragEnd($event, index)" (dragleave)="onDragLeave($event, index)"
+    (mouseenter)="onMouseEnter($event, index)" (mouseleave)="onMouseLeave($event, index)">
+    <ng-container *ngIf="item">
+      <span [class]="getClass(index)">{{formatAmount(index)}}</span>
+      <img [class.noted]="item.isNoted" (dragstart)="onDragStart($event, index)" draggable="true" [src]="items[index].icon" />
+    </ng-container>
+  </div>
+</ng-template>

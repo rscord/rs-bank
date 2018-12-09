@@ -1,0 +1,3 @@
+export enum Dye {
+  BARROWS, SHADOW, THIRD_AGE, ICE_DYE, BLOOD_DYE
+}

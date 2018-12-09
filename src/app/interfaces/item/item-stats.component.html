@@ -1,0 +1,16 @@
+<div *ngIf="item.combatStats && item.combatStats.damage">Damage: {{ item.combatStats.damage }}</div>
+<div *ngIf="item.combatStats && item.combatStats.accuracy">Accuracy: {{ item.combatStats.accuracy }}</div>
+<div *ngIf="item.combatStats && item.combatStats.strength">Strength bonus: {{ item.combatStats.strength }}</div>
+<div *ngIf="item.combatStats && item.combatStats.ranged">Ranged bonus: {{ item.combatStats.ranged }}</div>
+<div *ngIf="item.combatStats && item.combatStats.magic">Magic bonus: {{ item.combatStats.magic }}</div>
+<div *ngIf="item.augmentor" class="augmentor">
+  <div>Item level: {{ item.augmentor.level }}</div>
+  <div>Item xp: {{ item.augmentor.xp }}</div>
+  <ng-container *ngFor="let gizmo of item.augmentor.gizmos">
+    <div *ngIf="gizmo" class="gizmo">
+      <ng-container *ngFor="let perk of gizmo.perks">
+        <item-perk *ngIf="perk" [perk]="perk"></item-perk>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>

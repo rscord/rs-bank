@@ -1,0 +1,108 @@
+:host {
+    margin-right: 5px;
+}
+
+.head {
+    background: url(../../../assets/img/interface/bank/textured_bg.png);
+    border-bottom: none !important;
+    position: relative;
+    margin-left: 8px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.middle {
+    position: relative;
+    background: url(../../../assets/img/interface/bank/textured_bg.png);
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.bordered .border:first-child {
+    background: url(../../../assets/img/interface/bank/border_variant_2.png);
+    height: 4px;
+}
+
+.bordered .border:last-child {
+    background: url(../../../assets/img/interface/bank/border_variant_2.png);
+    height: 4px;
+    margin-top: -4px;
+}
+
+.heading-wrapper {
+    margin: -10px auto auto;
+    display: table;
+}
+
+.slope {
+    width: 7px;
+    height: 10px;
+    display: block;
+    background: url(../../../assets/img/interface/bank/heading_raise_left.png);
+}
+
+.slope.left {
+    float: left;
+}
+
+.slope.right {
+    transform: scaleX(-1);
+    float: right;
+}
+
+.head .middle {
+    display: inline-block;
+}
+
+.heading {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #fdcb0c;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    height: 23px;
+}
+
+.body {
+    padding: 10px;
+    background: #111214;
+    display: flex;
+    flex: 1;
+}
+
+.bordered {
+    border: 4px solid;
+    border-image: url(../../../assets/img/interface/bank/borders.png) 4 4 4 fill / 1 / 0 repeat;
+}
+
+.thing {
+    background: url(../../../assets/img/interface/bank/top_left_corner.png);
+    width: 29px;
+    height: 28px;
+    position: absolute;
+    top: -6px;
+    left: -12px;
+}
+
+.close-frame {
+    background: url(../../../assets/img/interface/close_frame.png);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: -8px;
+    top: -11px;
+}
+
+.close-button {
+    background: url(../../../assets/img/interface/close.png);
+    width: 20px;
+    height: 20px;
+    margin: 6px 0px 0px 7px;
+}
+
+.close-button:hover {
+    filter: saturate(200%);
+    cursor: pointer;
+}
