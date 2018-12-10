@@ -21,7 +21,8 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/github-fork-ribbon-css/gh-fork-ribbon.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

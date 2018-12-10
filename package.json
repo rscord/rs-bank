@@ -25,6 +25,7 @@
     "angular-resizable-element": "^3.2.2",
     "angular2-draggable": "^2.1.8",
     "core-js": "^2.4.1",
+    "github-fork-ribbon-css": "^0.2.1",
     "jquery": "^3.3.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "ng2-iq-select2": "^9.0.2",

@@ -12,6 +12,7 @@ dependencies:
   angular-resizable-element: 3.2.2
   angular2-draggable: 2.1.8
   core-js: 2.5.7
+  github-fork-ribbon-css: 0.2.1
   jquery: 3.3.1
   malihu-custom-scrollbar-plugin: 3.1.5
   ng2-iq-select2: 9.0.2
@@ -3007,6 +3008,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
+  /github-fork-ribbon-css/0.2.1:
+    dev: false
+    resolution:
+      integrity: sha1-e0HC0xCcAiXq42MTLduxJ7YYbqI=
   /glob-base/0.3.0:
     dependencies:
       glob-parent: 2.0.0
@@ -7797,6 +7802,7 @@ specifiers:
   angular2-draggable: ^2.1.8
   codelyzer: ^4.2.1
   core-js: ^2.4.1
+  github-fork-ribbon-css: ^0.2.1
   jasmine-core: ~3.3.0
   jasmine-spec-reporter: ~4.2.1
   jquery: ^3.3.1
